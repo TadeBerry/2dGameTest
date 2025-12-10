@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1092ada84f63e80489bf59050b83f355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletController
+  explosionPrefab: {fileID: 7133822391285745226, guid: 77ceac9ba42fd814895c716eadbd5db9, type: 3}
 --- !u!70 &6939528153160166443
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
