@@ -1134,6 +1134,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1713721224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1123732164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5044177067695920791, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+  m_PrefabInstance: {fileID: 1245694658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1123732165
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123732164}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.465
 --- !u!1 &1185459434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,6 +1326,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleScript
   pointsToAdd: 7
+--- !u!1001 &1245694658
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.87298
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.34355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596271923392014832, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044177067695920791, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      propertyPath: m_Name
+      value: RockPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5044177067695920791, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1123732165}
+  m_SourcePrefab: {fileID: 100100000, guid: e0be520ac3d939144af0c6ea3a39f2a2, type: 3}
 --- !u!1 &1248487384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,3 +2235,4 @@ SceneRoots:
   - {fileID: 1450246051}
   - {fileID: 1476125237}
   - {fileID: 1768308107}
+  - {fileID: 1245694658}
