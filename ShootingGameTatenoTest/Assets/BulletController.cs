@@ -5,6 +5,12 @@ public class BulletController : MonoBehaviour
 {
 
     public GameObject explosionPrefab;
+    private PointManager pointManager;
+
+    void Start()
+    {
+        pointManager = GameObject.Find("PointManager").GetComponent<PointManager>();
+    }
 
     void Update()
     {
@@ -18,14 +24,9 @@ public class BulletController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        // 衝突したときにスコアを更新する
-        GameObject.Find("Canvas").GetComponent<UIController>().AddScore();
-
-        // 爆発エフェクトを生成する	
-        GameObject effect = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
-        Destroy(effect, 1.0f);
-
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         Destroy(coll.gameObject);
         Destroy(gameObject);
+        pointManager.UpdateScore(10);
     }
 }
